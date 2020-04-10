@@ -293,6 +293,7 @@ $(document).ready(function(){
 $("#loader").show();  
 $.getJSON( "http://3.92.45.36:5000/table", function( data ) {							
 							$('#d1').DataTable({
+								responsive: true,
 								"data" : data,
 								crossDomain: true,
 								dataType: 'jsonp',
